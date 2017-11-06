@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sam S. Kim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-hand-peace-o"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 id="section-title">SAM S KIM</h1>
+								<div id="section-content">
+									<span> </span>
+									<p>software engineer. <br>
+										sports, coffee, ping pong<br>
+										constantly experimenting, always learning.</p>
+								</div>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#work" id="work">Work</a></li>
+								<li><a href="#about" id="about">About</a></li>
+								<li><a href="#contact" id="contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<div id="work-content">
+								<!-- <span class="image main"><img src="images/socialfiber.png" alt="" /></span> -->
+								<h4>Social Fiber</h4>
+								Full Stack Web Development
+								<ul>
+									<li>React/Redux</li>
+									<li>Node.js/Express</li>
+									<li>MySQL/Sequelize</li>
+								</ul>
+								<!-- <span class="image main"><img src="images/metermate.png" alt="" /></span> -->
+								<h4>MeterMate</h4>
+								Full Stack Web Development
+								<ul>
+									<li>Angular</li>
+									<li>Node.js/Express</li>
+									<li>MySQL</li>
+								</ul>
+								<!-- <span class="image main"><img src="images/sgla.png" alt="" /></span> -->
+								<h4>Sovereign Grace LA</h4>
+								Front End Web Development
+								<ul>
+									<li>JavaScript</li>
+									<li>HTML5/CSS3</li>
+								</ul>
+								<!-- <span class="image main"><img src="images/hipsterphotos.png" alt="" /></span> -->
+								<h4>Hipster Photos by Hipsters</h4>
+								Full Stack Web Development
+								<ul>
+									<li>Angular</li>
+									<li>Node.js/Express</li>
+									<li>MySQL</li>
+								</ul>
+								<!-- <span class="image main"><img src="images/coffee.jpg" alt="" /></span> -->
+								<h4>Hipster Coffee -- In Development</h4>
+								Full Stack Web Development
+								<ul>
+									<li>React/Redux</li>
+									<li>Node.js/Express</li>
+									<li>MongoDB</li>
+								</ul>
+								<!-- <span class="image main"><img src="images/travel.jpg" alt="" /></span> -->
+								<h4>Travel App -- In Development</h4>
+								Full Stack Web Development
+								<ul>
+									<li>React/Redux</li>
+									<li>Node.js/Express</li>
+									<li>MySQL/Sequelize</li>
+								</ul>
+							</div>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<div id="about-content">
+								<!-- <span class="image main"><img src="images/file.jpeg" alt="" /></span> -->
+								<p>Hi, I'm Sam. I'm currently a software developer based in Los Angeles on the Predictive Search Team at Criteo, which is where I get to build internal tools that make my coworkers' jobs easier.
+								I have a background in business intelligence/data analytics, but I love building beautifully designed products that improve efficiency and workflow.</p>
+								You can see my work history on <a href="https://www.linkedin.com/in/samkim28">LinkedIn</a>.
+								</div>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<div id="contact-content">
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.twitter.com/samkim828" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/samkim28" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.github.com/samkim28" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script type="text/javascript">
+			$(document).ready(function(){
+
+				$('#work').on('click', function(e){
+					e.preventDefault();
+					$('#section-title').html("Work");
+					$('#section-content').html($('#work-content').html());
+
+				});
+				$('#about').on('click', function(e){
+					e.preventDefault();
+					$('#section-title').html("About");
+					$('#section-content').html($('#about-content').html());
+				});
+				$('#contact').on('click', function(e){
+					e.preventDefault();
+					$('#section-title').html("Contact");
+					$('#section-content').html($('#contact-content').html());
+
+				});
+
+			})
+			</script>
+	</body>
+</html>
