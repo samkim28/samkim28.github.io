@@ -95,7 +95,8 @@
 
 		&:focus {
 			background: _palette(border-bg);
-			border-color: _palette(fg-bold);
+			// border-color: _palette(fg-bold);
+			border-color: #000;
 			box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
 		}
 	}
