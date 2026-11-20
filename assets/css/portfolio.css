@@ -68,8 +68,7 @@ a {
 .tagline,
 .bio-actions,
 .elsewhere,
-.end,
-.social-links {
+.end {
   display: flex;
   align-items: center;
 }
@@ -103,7 +102,8 @@ h1 span {
   padding-block: 6px;
 }
 
-.navlinks a:hover {
+.navlinks a:hover,
+.end a:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -203,8 +203,7 @@ h1 {
   color: var(--blue);
 }
 
-.elsewhere,
-.social-links {
+.elsewhere {
   flex-wrap: wrap;
   gap: 12px;
   font-size: 0.8125rem;
@@ -301,10 +300,20 @@ a.company:hover {
 }
 
 .end {
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
   padding: 20px 30px;
   border-top: 2px solid var(--ink);
+  font-size: 0.8125rem;
+}
+
+.end p {
+  margin: 0;
+}
+
+.end a {
+  font-weight: 700;
 }
 
 .contact {
@@ -351,10 +360,6 @@ a.company:hover {
 
 .field textarea {
   resize: vertical;
-}
-
-.social-links {
-  justify-content: flex-end;
 }
 
 @media (max-width: 600px) {
@@ -455,12 +460,7 @@ a.company:hover {
   }
 
   .end {
-    flex-wrap: wrap;
     padding: 20px;
-  }
-
-  .social-links {
-    justify-content: flex-start;
   }
 }
 
