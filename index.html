@@ -1,170 +1,122 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49290096-2"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sam S. Kim is a software engineer based in Los Angeles, building thoughtfully designed products that make everyday work easier.">
+    <meta name="theme-color" content="#203cc5">
+    <title>Sam S. Kim — Software Engineer</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 
-		  gtag('config', 'UA-49290096-2');
-		</script>
+    <!-- Existing Google Analytics configuration. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49290096-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "UA-49290096-2");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <main class="portfolio" id="content">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#home" aria-label="Sam S. Kim home">SK<span>.</span></a>
+        <div class="navlinks">
+          <a href="#work">Work <span aria-hidden="true">↓</span></a>
+          <a href="#about">About</a>
+          <a href="mailto:samkim28+contact@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
 
-		<title>Sam S. Kim</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body>
+      <header class="nameplate" id="home">
+        <div class="tagline mono">
+          <span>Software engineer</span>
+          <span>Los Angeles, California</span>
+        </div>
+        <h1>SAM <span>S. KIM.</span></h1>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <section class="bio" id="about" aria-labelledby="about-title">
+        <div class="bio-heading">
+          <span class="mono">01 / About me</span>
+          <h2 id="about-title">Hi, I'm Sam.</h2>
+        </div>
+        <div class="bio-content">
+          <p>I build thoughtfully designed products that make everyday work easier. Constantly experimenting, always learning.</p>
+          <div class="bio-actions">
+            <a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+            <div class="elsewhere">
+              <a href="https://www.github.com/samkim28" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://www.linkedin.com/in/samkim28" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-hand-peace-o"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1 id="section-title">SAM S KIM</h1>
-								<div id="section-content">
-									<div class="pCopy">software engineer.</div>
-									<div class="pCopy">sports analytics, breakfast burritos + coffee, pickleball.</div>
-									<div class="pCopy">constantly experimenting, always learning.</div>
-								</div>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#work" id="work">Work</a></li>
-								<li><a href="#about" id="about">About</a></li>
-								<li><a href="#contact" id="contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+      <section class="experience" id="work" aria-labelledby="work-title">
+        <div class="section-label">
+          <span class="mono">02 / The work</span>
+          <h2 id="work-title">Selected<br> experience.</h2>
+          <p>Some of the teams<br>I've built with.</p>
+        </div>
+        <div class="work-list">
+          <a class="company" href="https://www.mountain.com" target="_blank" rel="noopener noreferrer">
+            <span class="mono">01</span>
+            <strong>MNTN</strong>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="company" href="https://www.chief.com" target="_blank" rel="noopener noreferrer">
+            <span class="mono">02</span>
+            <strong>Chief</strong>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="company" href="https://www.luxurypresence.com" target="_blank" rel="noopener noreferrer">
+            <span class="mono">03</span>
+            <strong>Luxury Presence</strong>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <details class="earlier-work">
+            <summary>Earlier experience</summary>
+            <a class="company" href="https://www.workclout.com" target="_blank" rel="noopener noreferrer">
+              <span class="mono">04</span>
+              <strong>WorkClout</strong>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="company" href="https://www.criteo.com" target="_blank" rel="noopener noreferrer">
+              <span class="mono">05</span>
+              <strong>Criteo</strong>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="company" href="https://audits.metax.io" target="_blank" rel="noopener noreferrer">
+              <span class="mono">06</span>
+              <strong>adChain Audits</strong>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="company" href="https://publisher.adchain.com" target="_blank" rel="noopener noreferrer">
+              <span class="mono">07</span>
+              <strong>adChain Registry</strong>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="company">
+              <span class="mono">08</span>
+              <strong>adChain Decentralised Server Portal</strong>
+            </div>
+          </details>
+        </div>
+      </section>
 
-				<!-- Main -->
-					<div id="main">
-
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<div id="work-content">
-								<h4><a href="https://www.mountain.com">MNTN</a></h4>
-								<h4><a href="https://www.chief.com">Chief</a></h4>
-								<h4><a href="https://www.luxurypresence.com">Luxury Presence</a></h4>
-								<h4><a href="https://www.workclout.com">WorkClout</a></h4>
-								<h4><a href="https://www.criteo.com">Criteo</a></h4>
-								<h4><a href="https://audits.metax.io">adChain Audits</a></h4>
-								<h4><a href="https://publisher.adchain.com">adChain Registry</a></h4>
-								<h4>adChain Decentralised Server Portal</h4>
-								<a href="https://www.github.com/samkim28" class="icon fa-github"><span class="label">GitHub</span></a>
-							</div>
-							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About Me</h2>
-								<div id="about-content">
-								<!-- <span class="image main"><img src="images/file.jpeg" alt="" /></span> -->
-									<div class="pCopy">Hi, I'm Sam.</div>
-									<div class="pCopy">
-									I'm currently a senior software engineer at MNTN, based in Los Angeles.
-									<br><br>
-									MNTN builds advertising software for brands to drive measurable conversions, revenue, site visits and more through the power of television. 
-									<br>
-									MNTN Performance TV is the world’s first and only Connected TV advertising platform optimized for direct-response marketing goals. It redefines what advertisers can do with television, giving them the power to tie performance directly to their TV campaigns.
-									<br><br>
-									I love building beautifully designed products that improve efficiency and workflow. <br>
-									I love reading about sports analytics. <br>
-									I love breakfast burritos & coffee. <br>
-									</div>
-									<div class="pCopy">
-									You can see my work history on <a href="https://www.linkedin.com/in/samkim28">LinkedIn</a>.
-									</div>
-									<br><br>
-									<div class="pCopy">
-									If you're a small business owner and you need assistance with modernizing your business, feel free to contact me!
-									</div>
-								</div>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<div id="contact-content">
-
-								<form id="gform" method="POST" action="https://formspree.io/samkim28+contact@gmail.com">
-									<div class="field half first">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-
-								<ul class="icons">
-									<li><a href="https://www.twitter.com/samkim828" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.instagram.com/samkim28" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://www.github.com/samkim28" class="icon fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</div>
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			<script type="text/javascript">
-			$(document).ready(function(){
-
-				$('#work').on('click', function(e){
-					e.preventDefault();
-					$('#section-title').html("Work");
-					$('#section-content').html($('#work-content').html());
-
-				});
-				$('#about').on('click', function(e){
-					e.preventDefault();
-					$('#section-title').html("About Me");
-					$('#section-content').html($('#about-content').html());
-				});
-				$('#contact').on('click', function(e){
-					e.preventDefault();
-					$('#section-title').html("Contact");
-					$('#section-content').html($('#contact-content').html());
-
-				});
-
-			})
-			</script>
-	</body>
+      <footer class="end" id="contact">
+        <div>
+          <strong>Have something in mind? Let's talk.</strong>
+          <a class="contact-link" href="mailto:samkim28+contact@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <nav class="social-links" aria-label="Social profiles">
+          <a href="https://www.github.com/samkim28" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.twitter.com/samkim828" target="_blank" rel="noopener noreferrer">Twitter <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/samkim28" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+        </nav>
+      </footer>
+    </main>
+  </body>
 </html>
