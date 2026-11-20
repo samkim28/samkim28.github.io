@@ -129,13 +129,15 @@ h1 {
 }
 
 .bio,
+.projects,
 .experience,
 .contact {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.bio {
+.bio,
+.projects {
   border-bottom: 2px solid var(--ink);
 }
 
@@ -257,6 +259,16 @@ a.company:hover {
   color: #57564f;
   font-size: 0.875rem;
   line-height: 1.6;
+}
+
+.project-type {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue);
+}
+
+.projects .company:last-child {
+  border-bottom: 0;
 }
 
 .company > .mono,
@@ -386,6 +398,7 @@ a.company:hover {
   }
 
   .bio,
+  .projects,
   .experience,
   .contact,
   .contact-fields {
