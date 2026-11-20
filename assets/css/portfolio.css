@@ -290,18 +290,36 @@ a.company:hover {
 }
 
 .earlier-work summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   padding: 18px 28px;
+  border: 2px solid var(--ink);
+  background: #e4e7f5;
   cursor: pointer;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   font-weight: 700;
+  list-style: none;
+}
+
+.earlier-work summary::-webkit-details-marker {
+  display: none;
 }
 
 .earlier-work summary:hover {
-  color: var(--blue);
+  background: var(--blue);
+  color: #fff;
 }
 
-.earlier-work[open] summary {
-  border-bottom: 1px solid var(--ink);
+.earlier-work summary span::before {
+  content: "+";
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.earlier-work[open] summary span::before {
+  content: "−";
 }
 
 .earlier-work .company:last-child {
