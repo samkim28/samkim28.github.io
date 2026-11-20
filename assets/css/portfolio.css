@@ -56,7 +56,8 @@ a {
   border: 2px solid var(--ink);
 }
 
-.mono {
+.mono,
+.field label {
   font: 0.6875rem / 1.5 "Courier New", monospace;
   letter-spacing: 0.045em;
   text-transform: uppercase;
@@ -315,12 +316,12 @@ a.company:hover {
 }
 
 .field label {
-  font-size: 0.8125rem;
   font-weight: 700;
 }
 
 .field input,
 .field textarea {
+  appearance: none;
   width: 100%;
   min-width: 0;
   padding: 12px;
@@ -328,8 +329,16 @@ a.company:hover {
   border-radius: 0;
   background: var(--paper);
   color: var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
   font: inherit;
   line-height: 1.5;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--blue);
+  background: #e4e7f5;
+  box-shadow: 3px 3px 0 var(--blue);
 }
 
 .field textarea {
