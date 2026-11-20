@@ -155,7 +155,8 @@ h1 {
   padding: 26px 28px;
 }
 
-.bio-content p {
+.bio-content p,
+.contact-form > p {
   max-width: 500px;
   margin: 0 0 23px;
   font-size: 1.0625rem;
@@ -404,7 +405,8 @@ a.company:hover {
     gap: 0;
   }
 
-  .bio-content p {
+  .bio-content p,
+  .contact-form > p {
     margin-bottom: 20px;
     font-size: 1rem;
   }
