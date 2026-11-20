@@ -211,10 +211,6 @@ h1 {
   font-weight: 700;
 }
 
-.contact-link:hover {
-  color: var(--blue);
-}
-
 .section-label h2 {
   margin: 15px 0;
   font-size: 1.4375rem;
@@ -305,7 +301,7 @@ a.company:hover {
 }
 
 .end {
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
   padding: 20px 30px;
   border-top: 2px solid var(--ink);
@@ -355,13 +351,6 @@ a.company:hover {
 
 .field textarea {
   resize: vertical;
-}
-
-.contact-link {
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--ink);
-  font-size: 0.8125rem;
-  font-weight: 700;
 }
 
 .social-links {
