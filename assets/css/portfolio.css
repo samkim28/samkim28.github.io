@@ -227,10 +227,33 @@ a.company:hover {
   background: #e4e7f5;
 }
 
-.company strong {
+.company:not(a) {
+  grid-template-columns: 30px minmax(0, 1fr);
+}
+
+.company-copy h3 {
+  margin: 0;
   font-size: 1.3125rem;
+  line-height: 1.2;
   letter-spacing: -0.7px;
   overflow-wrap: anywhere;
+}
+
+.company-copy p {
+  max-width: 500px;
+  margin: 8px 0 0;
+  color: #57564f;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.company > .mono,
+.company .arrow {
+  align-self: start;
+}
+
+.company > .mono {
+  padding-top: 4px;
 }
 
 .company .arrow {
